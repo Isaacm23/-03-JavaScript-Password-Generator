@@ -12,7 +12,21 @@ var userChoices = {};
 //prompt character length
 var charLength = parseInt(prompt("Type in a number between 8 and 128."));
 
+// userChoice charLength; 
+console.log(charLength)
 
+// get user input
+function promptUser() {
+  var numChar = confirm("Include numbers?");
+  var lowerChar = confirm("Include lowercase characters?");
+  var upperChar = confirm("Include uppercase characters?");
+  var special = confirm("Include special characters?");
+
+
+
+writePassword();
+
+//document.getElementById("password").value = writePassword();
 
 generateBtn.addEventListener("click", function(){
   password.innerHTML = writePassword();
