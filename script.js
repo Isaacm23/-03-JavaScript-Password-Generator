@@ -1,27 +1,23 @@
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
+//variables for different choices for character passwords
+var charlow = 'abcdefghijklmnopqrstuvwxyz';
+var charUp = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var Numb = '0123456789';
+var special = '~!@#$%^&*()_+=';
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-  // password values
-  var charlow = "abcdefghijklmnopqrstuvwxyz"
-  var charUp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  var numb = "0123456789"
-  var special = "#$%&\'()*+,-./:;<=>?@[\\]^_`{|}"
-  passwordText.value = password;
-// create for loop
+var generateBtn = document.getElementById("generate");
 
+//creating an object 4
+var userChoices = {};
+
+//prompt character length
+var charLength = parseInt(prompt("Type in a number between 8 and 128."));
 
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
 
-function writePassword(l,values){
-  var passwordText = '';
-  for(var i = 0; i<l; i++){
-      passwordText += characters.charAt(Math.floor(Math.random() * characters.length));
-  }
-  return passwordText;
-}
+generateBtn.addEventListener("click", function(){
+  password.innerHTML = writePassword();
+})
+
+const myInp = document.getElementById("password");
+const btnCopy = document.getElementById("copy");
+
