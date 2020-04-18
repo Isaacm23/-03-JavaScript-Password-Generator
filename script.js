@@ -47,15 +47,14 @@ function writePassword() {
   for (var i = 0; i < charLength; i++) { 
 // object.keys runs goes through array of userChoices
     let passwordEls = Object.keys(userChoices)
-// passwordEls[Math.floor(Math.random() * passwordEls.length) returns a random whole number * the user choice of length of password
+// returns a random whole number * the user choice of length of password
     let randomEl = passwordEls[Math.floor(Math.random() * passwordEls.length)]
-//
+// 
     let char = getRandomCharacter(userChoices[randomEl]);
 
     finalPassword += char;
 
     console.log('RandomCharacter', char);
-    
   } 
   return finalPassword
 }
@@ -72,6 +71,6 @@ generateBtn.addEventListener("click", function(){
   password.innerHTML = writePassword();
 })
 
-const myInp = document.getElementById("password");
-const btnCopy = document.getElementById("copy");
+
+
 
