@@ -49,9 +49,9 @@ function writePassword() {
     let passwordEls = Object.keys(userChoices)
 // returns a random whole number * the user choice of length of password
     let randomEl = passwordEls[Math.floor(Math.random() * passwordEls.length)]
-// 
+// selects random charter from the what the user wanted in their password
     let char = getRandomCharacter(userChoices[randomEl]);
-
+// 
     finalPassword += char;
 
     console.log('RandomCharacter', char);
