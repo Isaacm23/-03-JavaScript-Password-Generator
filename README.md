@@ -11,7 +11,7 @@ The purpose of this website is to generate a secure password based on certain cr
 After answering each prompt, the user can now click on the generate botton to create a password to the specifications of the previous questions.
 
 ## page demonstation
-![gif]((images/ezgif.com-video-to-gif.gif "img web layout")
+![gif](images\ezgif.com-video-to-gif.gif) "img web layout")
 
 ### Built With 
 Visual Studio

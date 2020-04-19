@@ -53,7 +53,7 @@ function writePassword() {
     let char = getRandomCharacter(userChoices[randomEl]);
 // 
     finalPassword += char;
-
+// logs the random character
     console.log('RandomCharacter', char);
   } 
   return finalPassword
@@ -62,10 +62,9 @@ function writePassword() {
 function getRandomCharacter(str) {
   return str[Math.floor(Math.random() * str.length)]
 }
-
 writePassword();
 
-
+// button listens for click
 
 generateBtn.addEventListener("click", function(){
   password.innerHTML = writePassword();
